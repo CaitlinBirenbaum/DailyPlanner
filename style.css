@@ -12,11 +12,12 @@ body {
 
 textarea {
   background: transparent;
-  border: none;
+  border: medium;
+  border-color: #000000;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
+  padding: 1px;
 }
 
 .jumbotron {
@@ -40,6 +41,11 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+}
+.agenda {
+  width: 100%;
+  border: medium;
+  border-color: #000000;
 }
 
 .hour {

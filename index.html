@@ -29,6 +29,7 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p>Date/Time: <span id="datetime"></span></p>
 
+<!--Current Date and Time-->
 <script>
 var dt = new Date();
 document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()+1).slice(-2)) +":"+ (("0"+dt.getMinutes()+1).slice(-2));
@@ -37,10 +38,6 @@ document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-
     <div class="container">
       <!-- Timeblocks go here -->
     <div class="time-block"></div>
-    <div class="row">5AM</div>
-    <div class="row">6AM</div>
-    <div class="row">7AM</div>
-    <div class="row">8AM</div>
     <div class="row">9AM</div>
     <div class="row">10AM</div>
     <div class="row">11AM</div>
@@ -50,13 +47,6 @@ document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-
     <div class="row">3PM</div>
     <div class="row">4PM</div>
     <div class="row">5PM</div>
-    <div class="row">6PM</div>
-    <div class="row">7PM</div>
-    <div class="row">8PM</div>
-    <div class="row">9PM</div>
-    <div class="row">10PM</div>
-    <div class="row">11PM</div>
-    <div class="row">12AM</div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

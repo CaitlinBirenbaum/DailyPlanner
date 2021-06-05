@@ -2,7 +2,7 @@
 
 $("#currentDay").text(moment().format('ddd, MMM Do'));
 
-//currentTime to determine if the hour matchs for color
+//currentTime to determine if the hour matches for color
 var currentTime = moment().format('H');
 console.log()
 

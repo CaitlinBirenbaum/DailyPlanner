@@ -4,20 +4,13 @@ body {
   line-height: 1;
 }
 
-.datetime {
-  color: #000000;
-  font-family: sans-serif;
-  font-size: medium;
-}
-
 textarea {
   background: transparent;
-  border: medium;
-  border-color: #000000;
+  border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 1px;
+  padding: 10px;
 }
 
 .jumbotron {
@@ -41,11 +34,6 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
-}
-.agenda {
-  width: 100%;
-  border: medium;
-  border-color: #000000;
 }
 
 .hour {
@@ -80,4 +68,8 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.red {
+  background-color: red;
 }

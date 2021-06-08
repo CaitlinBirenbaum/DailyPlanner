@@ -7,6 +7,7 @@ var hour2 = $("#14");
 var hour3 = $("#15");
 var hour4 = $("#16");
 var hour5 = $("#17");
+//identified var time by using momentjs.com as a given source//
 var time = moment();
 
 function setPlanner() {
@@ -43,6 +44,8 @@ pastPresentFuture();
 
 
 //save to local storage
+//referenced WillV1 day planner project on Github and W3 Schools for local storage portion
+var button = $('.saveBtn')
 saveBtn.on('click', function (event) {
   event.preventDefault();
   var text = $(this).siblings('.col-sm-10').val().replace(/['"]+/g, '');

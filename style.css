@@ -48,21 +48,23 @@ textarea {
   border-top: 1px dashed #000000;
 }
 
+/*past, present and future were changed to reflect time changes*/
 .past {
-  background-color: #d3d3d3;
+  background-color: rgb(179, 240, 179);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: greenyellow;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: yellow;
   color: white;
 }
 
+/*SaveBtn is identified in JS*/
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;

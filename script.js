@@ -23,6 +23,7 @@ function setPlanner() {
         }
     });
 }
+//multiple examples of this class structure were researched from Stack Overflow and W3 Schools//
 function pastPresentFuture() {
   hour = time.hours();
   $(".time-block").each(function () {
@@ -44,7 +45,7 @@ pastPresentFuture();
 
 
 //save to local storage
-//referenced WillV1 day planner project on Github and W3 Schools for local storage portion
+//sourced from WillV1 day planner project on Github and W3 Schools for local storage portion
 var button = $('.saveBtn')
 saveBtn.on('click', function (event) {
   event.preventDefault();

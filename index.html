@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Style links. Javascript Link at bottom of page-->
     <link rel="stylesheet" href="style.css" />
     
     <link
@@ -26,13 +27,14 @@
   </head>
 
   <body>
+    <!--Source Code-->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p>Date/Time: <span id=datetime></span></p>
 
 <!--Current Date and Time-->
-<!--formatting sourced from JavaPoint and W3 Schools-->
+<!--content sourced from JavaPoint and W3 Schools-->
 <!-- Current Date -->
 Current Date:
 <input type="text" id="currentDay">
@@ -55,54 +57,65 @@ var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <!--Github was referenced for this portion, and the code was modified to fit the column and id requirements for the assignment-->
+      <!--9AM-->
       <div class="row time-block" id="9">
         <div class="col-1 hour">9 AM</div>
         <textarea class="col-sm-10 description"> </textarea>
         <button class="col-1 saveBtn">Save</button>
       </div>
+      <!--10AM-->
       <div class="row time-block" id="10">
         <div class="col-1 hour">10 AM</div>
         <textarea class="col-sm-10 description"></textarea>
         <button class="col-1 saveBtn">Save</button>
       </div>
+      <!--11AM-->
       <div class="row time-block" id="11">
         <div class="col-1 hour">11 AM</div>
         <textarea class="col-sm-10 description"></textarea>
         <button class="col-1 saveBtn">Save</button>
       </div>
+      <!--12PM-->
       <div class="row time-block" id="12">
         <div class="col-1 hour">12 PM</div>
         <textarea class="col-sm-10 description"></textarea>
         <button class="col-1 saveBtn">Save</button>
       </div>
+      <!--1PM-->
       <div class="row time-block" id="13">
         <div class="col-1 hour">1 PM</div>
         <textarea class="col-sm-10 description"></textarea>
         <button class="col-1 saveBtn">Save</button>
       </div>
+      <!--2PM-->
       <div class="row time-block" id="14">
         <div class="col-1 hour">2 PM</div>
         <textarea class="col-sm-10 description"></textarea>
         <button class="col-1 saveBtn">Save</button>
       </div>
+      <!--3PM-->
       <div class="row time-block" id="15">
         <div class="col-1 hour">3 PM</div>
         <textarea class="col-sm-10 description"></textarea>
         <button class="col-1 saveBtn">Save</button>
       </div>
+      <!--4PM-->
       <div class="row time-block" id="16">
         <div class="col-1 hour">4 PM</div>
         <textarea class="col-sm-10 description"></textarea>
         <button class="col-1 saveBtn">Save</button>
       </div>
+      <!--5PM-->
       <div class="row time-block" id="17">
         <div class="col-1 hour">5 PM</div>
         <textarea class="col-sm-10 description"></textarea>
         <button class="col-1 saveBtn">Save</button>
       </div>
     </div>
+    <!--more hours can be added as needed, as both the clock and id conventions follow a 24 hour military format-->
       
-
+    <!--Source Code given at start of assignment-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>

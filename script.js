@@ -1,34 +1,49 @@
-//current date and time
+var hour9 = $("#9");
+var hour10 = $("#10");
+var hour11 = $("#11");
+var hour12 = $("#12");
+var hour1 = $("#13");
+var hour2 = $("#14");
+var hour3 = $("#15");
+var hour4 = $("#16");
+var hour5 = $("#17");
+var time = moment();
 
-$("#currentDay").text(moment().format('ddd, MMM Do'));
+function setPlanner() {
 
-function currentTime() {
-  var current = moment().hours()
-  var time = $('.time-block');
+    $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
-  //    console.log(current);
+    $(".time-block").each(function () {
+        var id = $(this).attr("id");
+        var schedule = localStorage.getItem(id);
 
-  time.each(function () {
-    var hour = parseInt($(this).attr('id'))
+        if (schedule !== null) {
+            $(this).children(".schedule").val(schedule);
+        }
+    });
+}
+function pastPresentFuture() {
+  hour = time.hours();
+  $(".time-block").each(function () {
+      var thisHour = parseInt($(this).attr("id"));
 
-  //  console.log(hour);
-
-    if (hour === current) {
-      $(this).children('.col-sm-10').attr('class', 'present col-sm-10 description')
-  //    console.log(('present' + hour + current))
-    } else if (current > hour) {
-      $(this).children('.col-sm-10').attr('class', 'past col-sm-10 description')
-  //    console.log(('past' + hour + current))
-    } else {
-      $(this).children('.col-sm-10').attr('class', 'future col-sm-10 description')
-  //    console.log(('future' + hour + current))
-    }
+      if (thisHour > hour) {
+          $(this).addClass("future")
+      }
+      else if (thisHour === hour) {
+          $(this).addClass("present");
+      }
+      else {
+          $(this).addClass("past");
+      }
   })
 }
-currentTime()
+
+pastPresentFuture();
+
 
 //save to local storage
-button.on('click', function (event) {
+saveBtn.on('click', function (event) {
   event.preventDefault();
   var text = $(this).siblings('.col-sm-10').val().replace(/['"]+/g, '');
   var parent = $(this).parent().attr('id');
